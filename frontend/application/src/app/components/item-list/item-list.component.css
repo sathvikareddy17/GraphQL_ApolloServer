@@ -1,0 +1,98 @@
+/* 🌟 General Styles */
+.bookstore-container {
+    text-align: center;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #f8f9fa, #e3e7ed);
+    min-height: 100vh;
+  }
+  
+  /* 📚 Bookstore Header */
+  .bookstore-title {
+    font-size: 3rem;
+    color: #4A148C; /* Deep Purple */
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(74, 20, 140, 0.2);
+    margin-bottom: 10px;
+  }
+  
+  .bookstore-subtitle {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* 📖 Book List */
+  .book-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  /* 🎨 Updated Book Card Style */
+  .book-card {
+    background: linear-gradient(135deg, rgba(255, 238, 204, 0.8), rgba(255, 204, 153, 0.8)); /* Warm Gold Tones */
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 
+                -5px -5px 15px rgba(255, 255, 255, 0.6);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #4A148C; /* Deep Purple */
+  }
+  
+  .book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), 
+                -5px -5px 20px rgba(255, 255, 255, 0.8);
+  }
+  
+  /* 📝 Book Title */
+  h3 {
+    font-size: 1.7rem;
+    color: #6A1B9A; /* Royal Purple */
+    margin: 12px 0;
+    font-weight: bold;
+  }
+  
+  /* 📜 Description */
+  p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+    opacity: 0.85;
+  }
+  
+  /* ✨ Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .book-card {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* 🛑 No Books Message */
+  .no-books {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4A148C;
+    background: rgba(255, 235, 59, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  

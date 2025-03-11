@@ -1,0 +1,21 @@
+<div class="bookstore-container">
+    <!-- Bookstore Header -->
+    <h1 class="bookstore-title">📚 Welcome to Our Bookstore</h1>
+    <p class="bookstore-subtitle">Explore a collection of amazing books!</p>
+  
+    <!-- Book List -->
+    <div *ngIf="items.length > 0" class="book-list">
+      <ul>
+        <li *ngFor="let item of items" class="book-card">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+        </li>
+      </ul>
+    </div>
+  
+    <!-- No Books Message -->
+    <div *ngIf="items.length === 0" class="no-books">
+      <p>📖 No books found. Start adding some amazing titles!</p>
+    </div>
+  </div>
+  
