@@ -20,14 +20,14 @@ mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
-  console.log("✅ MongoDB connected successfully");
+  console.log("MongoDB connected successfully");
 }).catch(err => {
-  console.error("❌ MongoDB connection error:", err);
+  console.error("MongoDB connection error:", err);
   process.exit(1);
 });
 
 const server = new ApolloServer({ typeDefs, resolvers });
 server.start().then(() => {
   server.applyMiddleware({ app });
-  app.listen(PORT, () => console.log(`🚀 Server running at http://localhost:${PORT}${server.graphqlPath}`));
+  app.listen(PORT, () => console.log(` Server running at http://localhost:${PORT}${server.graphqlPath}`));
 });
